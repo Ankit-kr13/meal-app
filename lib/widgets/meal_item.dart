@@ -8,6 +8,7 @@ class MealItem extends StatelessWidget {
       : super(key: key);
 
   final Meal meal;
+
   final void Function(Meal meal) onSelectMeal;
   String get complexityText {
     return meal.complexity.name[0].toUpperCase() +
